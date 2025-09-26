@@ -1,7 +1,12 @@
 services:
   - type: web
-    name: gainsight-ai
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run Generalize.py --server.port $PORT --server.address 0.0.0.0
-    plan: free
+    name: poultry-app
+    env: python
+    plan: free   # or starter, standard etc. based on your Render account
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run Working.py --server.port $PORT --server.address 0.0.0.0"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13
+
+
