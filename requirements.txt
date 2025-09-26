@@ -1,0 +1,16 @@
+streamlit 
+pandas 
+scikit-learn 
+xgboost 
+matplotlib 
+seaborn
+plotly
+numpy
+shap
+fpdf
+kaleido
+reportlab
+google.generativeai
+python-dotenv
+pylance
+openpyxl
